@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #D1891F;
+    --text: #344D66;
+    --white-text: #F0F0F0;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: white;
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul li a {
+    color: #F0F0F0;
+    text-decoration: none;
+    list-style: none;
+    text-wrap: nowrap;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+/* header */
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-img {
+    width: 178px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.nav-search {
+    display: flex;
+    gap: 15px;
+    padding: 8px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+}
+
+.nav-search input {
+    font-size: large;
+    color: rgb(101, 98, 98);
+    background-color: #F0F0F0;
+    border: none;
+    outline: none;
+    width: 36rem;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.badge {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    right: -3px;
+    top: -5px;
+    font-size: xx-small;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+/* navbar */
+.navbar {
+    background-color: var(--text);
+    width: 100%;
+    padding: 14px 0;
+
+}
+
+.navlist {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #F0F0F0;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dropdown img {
+    margin: auto 0;
+}
+
+.banner-section {
+    min-height: 90vh;
+    background-image: url('assets/images/hero-banner-d-gunn-and-moore-150425\ \(1\)\ 1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white-text);
+}
+
+#banner-sec {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+
+.banner-section h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 0.3px;
+}
+
+.banner-section h2 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.banner-section p {
+    text-wrap: wrap;
+}
+
+.btn {
+    max-width: 170px;
+    border-radius: 14px;
+    padding: 5px 5px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn p {
+    padding-left: 15px;
+}
+
+.btn-arrow {
+    background-color: #ad741e;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-arrow .arrow {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.btn:hover {
+    background-color: #eea536;
+}
+
+.btn-arrow1 {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.btn-arrow2 {
+    transform: translate(-120%, 120%);
+    /* left-bottom se start */
+    opacity: 0;
+}
+
+
+/* arrow 1 goes out to top-right */
+.btn:hover .btn-arrow1 {
+    transform: translate(120%, -120%);
+    opacity: 0;
+}
+
+.btn:hover .btn-arrow2 {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+/* featured-catagory */
+.featured-catagory {
+    width: 100%;
+}
+
+.featured-title {
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--text);
+}
+
+.featured-para {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text);
+
+}
+
+.featured-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.featured-img {
+    width: 300px;
+    height: auto;
+}
+
+.btn2 {
+    margin: 2rem auto 5rem auto;
+    color: #F0F0F0;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+        <form class="signup-form" id="signupForm">
+            <h2 class="title">Create Account</h2>
+            <p class="subtitle">Fill details to create your account</p>
+
+            <!-- Full Name -->
+            <div class="field" id="field-name">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Enter full name" />
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="field" id="field-email">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter email" />
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Phone -->
+            <div class="field" id="field-phone">
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" placeholder="Enter phone number" />
+                <small class="error-text"></small>
+            </div>
+
+            <!-- DOB -->
+            <div class="field" id="field-dob">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date" />
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Gender (Radio) -->
+            <div class="field" id="field-gender">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label class="radio">
+                        <input type="radio" name="gender" value="male" />
+                        <span>Male</span>
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="gender" value="female" />
+                        <span>Female</span>
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="gender" value="other" />
+                        <span>Other</span>
+                    </label>
+                </div>
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Country (Select) -->
+            <div class="field" id="field-country">
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="">Select country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                </select>
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Skills (Checkbox) -->
+            <div class="field" id="field-skills">
+                <label>Skills</label>
+                <div class="check-group">
+                    <label class="check">
+                        <input type="checkbox" value="html" />
+                        <span>HTML</span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox" value="css" />
+                        <span>CSS</span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox" value="js" />
+                        <span>JavaScript</span>
+                    </label>
+                </div>
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Profile Picture (File) -->
+            <div class="field" id="field-photo">
+                <label for="photo">Profile Photo</label>
+                <input id="photo" type="file" accept="image/*" />
+                <small class="hint">Only JPG/PNG allowed</small>
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="field" id="field-password">
+                <label for="password">Password</label>
+                <div class="pass-wrap">
+                    <input id="password" type="password" placeholder="Create password" />
+                    <button type="button" class="toggle-btn" id="togglePass">Show</button>
+                </div>
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="field" id="field-confirm">
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="pass-wrap">
+                    <input id="confirmPassword" type="password" placeholder="Confirm password" />
+                    <button type="button" class="toggle-btn" id="toggleConfirm">Show</button>
+                </div>
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Terms -->
+            <div class="field" id="field-terms">
+                <label class="check">
+                    <input id="terms" type="checkbox" />
+                    <span>I agree to Terms & Conditions</span>
+                </label>
+                <small class="error-text"></small>
+            </div>
+
+            <!-- Submit -->
+            <button class="btn" id="submitBtn" type="submit">
+                Create Account
+            </button>
+
+            <p class="bottom-text">
+                Already have an account? <a href="#">Login</a>
+            </p>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

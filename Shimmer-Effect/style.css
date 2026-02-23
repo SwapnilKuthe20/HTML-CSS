@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 250px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.image {
+    height: 150px;
+    background: #e0e0e0;
+    margin-bottom: 12px;
+
+}
+
+.title {
+    height: 20px;
+    width: 80%;
+    background: #e0e0e0;
+    margin-bottom: 8px;
+    animation: shimmer 1.2s infinite linear;
+}
+
+.price {
+    height: 20px;
+    width: 40%;
+    background: #e0e0e0;
+    margin-bottom: 12px;
+    animation: shimmer 1.2s infinite linear;
+}
+
+.button {
+    height: 35px;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 6px;
+    animation: shimmer 1.2s infinite linear;
+
+}
+
+.skeleton {
+    background: linear-gradient(120deg,
+            #e0e0e0 25%,
+            #f5f5f5 50%,
+            #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 6px;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: 200% 0;
+    }
+
+    to {
+        background-position: -200% 0;
+    }
+}
+
+.btn {
+    display: block;
+    background-color: blueviolet;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.btn::after {
+    content: "@";
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.box::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: #ddd;
+
+    position: absolute;
+    left: -80px;
+    animation: move 3s infinite linear;
+}
+
+@keyframes move {
+    to {
+        left: 100%;
+    }
+}
+
+/* 
+.box {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    background: linear-gradient(120deg, grey 35%, white 50%, grey 65%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.img-shimmer {
+    width: 300px;
+    height: 200px;
+    background-color: blanchedalmond;
+    margin: auto;
+    margin-top: 20px;
+    background-image: url('./bg.avif');
+    animation: shimmerImg 5s linear infinite;
+}
+
+.img-shimmer:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes shimmerImg {
+    from {
+        background-position: 100% 0;
+    }
+
+    to {
+        background-position: -100% 0;
+    }
+}
+
+.move {
+    width: 300px;
+    height: 200px;
+    background-color: gold;
+    animation: move 3s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skeleton {
+    height: 20px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #eeeeee 25%, #c1bdbd 50%, #eeeeee 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+.box-Gradient {
+    display: flex;
+    justify-content: center;
+}
+
+.gredient {
+    margin: auto;
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right, red 0%, blue 50%, green 80%, yellow 100%);
+}
+
+.gredient1 {
+    margin: auto;
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right, red 0%, red 50%, yellow 50%, yellow 100%);
+}
+
+.gredient2 {
+    margin: auto;
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(100deg, rgb(87, 86, 86) 25%, rgb(191, 186, 186) 50%, rgb(72, 71, 71) 75%);
+}
+
+.gredient3 {
+    margin: auto;
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right, yellow 20%, purple 20%);
+}
+
+@keyframes shimmer {
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+.slider {
+    width: 100px;
+    height: 100px;
+    color: purple;
+    background-color: blanchedalmond;
+    margin-top: 20px;
+    animation: slide 5s ease-in-out infinite 2s;
+    cursor: pointer;
+}
+
+.slider:hover {
+    animation-play-state: paused;
+}
+
+.trans {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 125, 125);
+    margin: 10px;
+    transition: transform 1s ease;
+}
+
+.trans:hover {
+    transform: translate(40px, 40px);
+}
+
+.scale {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 71, 32);
+    margin: 10px;
+    transition: transform 1s ease-in-out;
+}
+
+.scale:hover {
+    transform: scale(1.90);
+}
+
+.move {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(127, 13, 220);
+    margin: 10px;
+    animation: move 2s infinite;
+    transition: transform 1s ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+.skew {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(142, 182, 9);
+    margin: 10px;
+    transition: transform 1s ease-in-out;
+}
+
+.skew:hover {
+    transform: skew(40deg);
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(104, 79, 4);
+    margin: 10px;
+    transition: transform 1s ease-in-out;
+}
+
+.rotate:hover {
+    transform: rotate(20deg);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(500%);
+    }
+} */

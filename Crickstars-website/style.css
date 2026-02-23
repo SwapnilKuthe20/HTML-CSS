@@ -52,6 +52,10 @@ ul li {
     padding: 20px 0;
 }
 
+.hamburger {
+    display: none;
+}
+
 .logo-img {
     width: 178px;
     height: 42px;
@@ -73,6 +77,10 @@ ul li {
     border: none;
     outline: none;
     width: 36rem;
+}
+
+.nav-search-res {
+    display: none;
 }
 
 .nav-icons {
@@ -266,4 +274,47 @@ ul li {
 .btn2 {
     margin: 2rem auto 5rem auto;
     color: #F0F0F0;
+}
+
+
+
+@media (max-width:425px) {
+    .nav-icons {
+        gap: 5px;
+    }
+
+    .logo-img {
+        display: flex;
+        gap: 8px;
+        width: 80px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:768px) {
+    .nav-search {
+        display: none;
+    }
+
+    .logo-img {
+        display: flex;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    .nav-search-res {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .nav-search-res input {
+        font-size: small;
+    }
+
+    .navbar {
+        display: none;
+    }
 }

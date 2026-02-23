@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card {
+    padding: 16px;
+    width: 260px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    margin: auto;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    /* background-color: rgb(41, 40, 40); */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.title {
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    /* background-color: rgb(41, 40, 40); */
+}
+
+.price {
+    width: 60%;
+    height: 20px;
+    border-radius: 10px;
+    /* background-color: rgb(41, 40, 40); */
+}
+
+.desc {
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    /* background-color: rgb(41, 40, 40); */
+}
+
+.skeleton {
+    background-color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    background: linear-gradient(100deg,
+            transparent 15%,
+            rgba(77, 75, 75, 0.7) 50%,
+            transparent 85%);
+
+    animation: shimmer 4s infinite linear;
+}
+
+@keyframes shimmer {
+    to {
+        left: 100%;
+    }
+}
